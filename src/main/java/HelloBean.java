@@ -12,16 +12,6 @@ import javax.faces.event.ActionEvent;
 @SessionScoped
 public class HelloBean
 {
-    private String text;
-
-    public String getText() {
-        return text;
-    }
-
-    public void setText(String text) {
-        this.text = text;
-    }
-
     public void buttonAction(ActionEvent actionEvent) {
         addMessage("Welcome to Primefaces!!");
     }
