@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+
+</h:head>
+<h:body>
+    <h2>JSF Hello World</h2>
+    <h3>Example of using simple Primefaces component [p:commandButton]</h3>
+    <h3>ajax rendering</h3>
+
+    <h:form>
+        <p:growl id="growl" life="2000" />
+
+        <p:commandButton value="Ajax Submit" id="ajax" update="growl" actionListener="#{helloBean.buttonAction}" styleClass="ui-priority-primary" />
+    </h:form>
+</h:body>
+</html>
